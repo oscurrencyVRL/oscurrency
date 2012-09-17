@@ -33,7 +33,8 @@ gem "oauth"
 gem "feed-normalizer"
 gem "texticle"
 
-gem "aws-s3"
+gem "fog"
+gem "carrierwave"
 gem "rmagick", :require => 'RMagick'
 gem "json"
 gem "geokit-rails3"
