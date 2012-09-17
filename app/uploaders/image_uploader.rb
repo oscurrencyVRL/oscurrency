@@ -33,7 +33,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   end
 
   def filename
-    super.chomp(File.extname(super)) + '.jpg'
+    super and super.chomp(File.extname(super)) + '.jpg'
   end
 
   def extension_white_list
