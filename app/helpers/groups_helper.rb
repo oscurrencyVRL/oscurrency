@@ -13,7 +13,7 @@ module GroupsHelper
     link_options = (options[:link_options] || {}).merge title: h(group.name)
     content = image_tag(group.picture.send(version).url, image_options)
     # This is a hack needed for the way the designer handled rastered images (with a 'vcard' class).
-    content += content_tag(:span, h(group.name), :class => "fn" if options[:vcard]
+    content += content_tag :span, h(group.name), :class => "fn" if options[:vcard]
     link_to(content, link, link_options)
   end
   
