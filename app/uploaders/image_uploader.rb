@@ -4,6 +4,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   include CarrierWave::MimeTypes
   include CarrierWave::RMagick
   include Sprockets::Helpers::RailsHelper
+  include Sprockets::Helpers::IsolatedHelper
 
   if Rails.env.development?
     storage :file
