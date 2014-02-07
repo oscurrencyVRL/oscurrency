@@ -57,6 +57,9 @@ gem "calendar_helper"
 gem "gibbon", :git => "git://github.com/amro/gibbon.git"
 gem "bootstrap_form", "~> 0.3.2"
 
+# Asset management
+gem "bower-rails", "~> 0.7.0"
+
 group :development, :test do
   gem 'debugger'
   gem "heroku-api"
