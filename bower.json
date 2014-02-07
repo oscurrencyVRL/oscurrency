@@ -1,7 +1,8 @@
-{
+;{
   "lib": {
     "name": "bower-rails generated lib assets",
     "dependencies": {
+      "bootswatch":       "~> 2.2.2"
     }
   },
   "vendor": {
