@@ -12,10 +12,8 @@
     <%- if session[:theme] %>
       <%= stylesheet_link_tag theme_url(session[:theme]) %>
     <%- else -%>
-      <%= stylesheet_link_tag "//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap.no-icons.min.css" %>
       <%= stylesheet_link_tag "theme" %>
     <%- end -%>
-    <%= stylesheet_link_tag "//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-responsive.min.css" %>
     <%= stylesheet_link_tag "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css" %>
     <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" %>
