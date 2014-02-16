@@ -56,7 +56,7 @@ gem 'valid_email', :require => 'valid_email/email_validator'
 gem "calendar_helper"
 gem "gibbon", :git => "git://github.com/amro/gibbon.git"
 
-gem 'anjlab-bootstrap-rails', '~> 2.2.2', :require => 'bootstrap-rails'
+gem 'bootstrap-sass', '~> 2.2.2.0'
 gem "bootstrap_form", "~> 0.3.2"
 
 group :development, :test do
