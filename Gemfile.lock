@@ -336,7 +336,6 @@ GEM
       libwebsocket (~> 0.1.3)
       multi_json (~> 1.0)
       rubyzip
-    silent-postgres (0.1.1)
     simple-rss (1.2.3)
     simple_oauth (0.1.9)
     slop (3.3.3)
@@ -405,6 +404,7 @@ DEPENDENCIES
   aws-s3
   better_errors
   binding_of_caller
+  bootstrap-sass (~> 2.2.2.0)
   bootstrap_form (~> 0.3.2)
   bower-rails (~> 0.7.0)
   calendar_helper
@@ -447,7 +447,6 @@ DEPENDENCIES
   rspec-rails
   ruby-openid
   sass-rails
-  silent-postgres
   spork
   sqlite3
   texticle
