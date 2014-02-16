@@ -63,9 +63,6 @@ GEM
       multi_json (~> 1.0)
     acts_as_tree_rails3 (0.1.0)
     addressable (2.3.2)
-    anjlab-bootstrap-rails (2.2.2.1)
-      railties (>= 3.0)
-      sass (>= 3.2)
     annotate (2.5.0)
       rake
     ar_after_transaction (0.2.6)
@@ -397,7 +394,6 @@ PLATFORMS
 DEPENDENCIES
   aasm
   acts_as_tree_rails3
-  anjlab-bootstrap-rails (~> 2.2.2)
   annotate
   ar_after_transaction
   artifice
@@ -407,6 +403,7 @@ DEPENDENCIES
   aws-s3
   better_errors
   binding_of_caller
+  bootstrap-sass (~> 2.2.2.0)
   bootstrap_form (~> 0.3.2)
   calendar_helper
   cancan
