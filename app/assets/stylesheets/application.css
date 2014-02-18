@@ -3,7 +3,6 @@
 *= require skin
 *= require bootstrap_form
 *= require style
-*= require bower_components/bootswatch/amelia/bootstrap.min
 *  require jquery.ui.datepicker
 */
 

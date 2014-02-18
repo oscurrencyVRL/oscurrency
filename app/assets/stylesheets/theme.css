@@ -1,6 +1,6 @@
 /*
-*  require amelia-theme
-*= require theme-bootstrap
+*=  require theme-amelia
+* require bower_components/bootswatch/amelia/bootstrap.min
 */
 
 
