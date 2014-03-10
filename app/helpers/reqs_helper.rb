@@ -31,7 +31,18 @@ module ReqsHelper
     req.approved_bids.map {|bid| "Confirmed completed by #{person_link req.person} #{time_ago_in_words(bid.approved_at)} #{t('ago')}"}
   end
 
-  def formatted_req_categories(categories)
-    (categories.map{|c| h(c.to_s)}.join("<br>") + "<br>").html_safe
+  # 
+  # function `horizontal_formatted_req_categories` outputs an html string
+  # that includes a prefix ( ie: Listed in: ) enclosed in <span> tags and the
+  # following to be a comma seperated list of names.
+  # 
+  def horizontal_formatted_req_categories( categories, prefix_text = t('offers.partial.listed_in'))
+    html = "<div class='horizontal-categories'><span>#{prefix_text}</span>&nbsp;"
+    
+    # Adding categories with commas - note extra comma to end
+    categories.each { | c | html << h(c) + ', ' }
+
+    # remove the accessive ', ' from the last position
+    html = html[0..-3] << '</div>'
   end
 end
