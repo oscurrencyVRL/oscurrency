@@ -1,0 +1,4 @@
+
+body {
+  @include gradient-radial(lighten($bodyBackground, 7%), $bodyBackground);
+}
