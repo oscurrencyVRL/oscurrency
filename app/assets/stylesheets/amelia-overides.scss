@@ -2,3 +2,15 @@
 body {
   @include gradient-radial(lighten($bodyBackground, 7%), $bodyBackground);
 }
+
+a {
+  color: black;
+
+  &:hover {
+    color: red;
+  }
+}
+
+.navbar-text {
+  display: inline-block;
+}
