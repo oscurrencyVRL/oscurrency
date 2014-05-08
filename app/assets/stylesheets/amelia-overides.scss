@@ -3,6 +3,10 @@ body {
   @include gradient-radial(lighten($bodyBackground, 7%), $bodyBackground);
 }
 
+.container {
+  padding-top: 30px;
+}
+
 a {
   color: black;
 
@@ -11,6 +15,13 @@ a {
   }
 }
 
+// NAVBAR
+
+.navbar{
+  .container{
+    padding-top: 0px;
+  }
+}
 .navbar-text {
   display: inline-block;
 }
@@ -30,4 +41,8 @@ li {
     background-color: $tabBackgroundColor;
     color: $tabTextColor;
   }
+}
+
+.nav-tabs {
+  border-bottom: $tabBorderColor;
 }
