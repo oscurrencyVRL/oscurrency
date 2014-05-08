@@ -18,3 +18,16 @@ a {
 li {
   color: #999999;
 }
+
+
+// NAV
+//-------------------------------------------------------
+
+.nav-tabs,
+.nav-pills {
+  & > .active > a,
+  & > .active > a:hover {
+    background-color: $tabBackgroundColor;
+    color: $tabTextColor;
+  }
+}
