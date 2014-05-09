@@ -48,6 +48,10 @@ a {
     text-shadow: none;
   }
 
+  & > li {
+    margin-bottom: 0px;
+  }
+
   & > li > a {
     background-color: $tabBackgroundColorLite;
   }
