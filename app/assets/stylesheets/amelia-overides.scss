@@ -26,7 +26,7 @@ a {
   display: inline-block;
 }
 
-li {
+#skillbank li {
   color: #999999;
 }
 
@@ -40,6 +40,16 @@ li {
   & > .active > a:hover {
     background-color: $tabBackgroundColor;
     color: $tabTextColor;
+  }
+
+  & > li > a:hover {
+    background-color: $tabBackgroundColor;
+    border-color: transparent;
+    text-shadow: none;
+  }
+
+  & > li > a {
+    background-color: $tabBackgroundColorLite;
   }
 }
 
