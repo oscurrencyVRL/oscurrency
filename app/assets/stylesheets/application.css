@@ -1,5 +1,6 @@
 /*
 *  require vendor
+*= require bootstrap-theme
 *= require skin
 *= require bootstrap_form
 *= require style
