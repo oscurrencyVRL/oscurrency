@@ -18,6 +18,10 @@ group :assets do
   # gem 'jquery-ui-rails'
 end
 
+group :debug do
+  gem 'debugger'
+end
+
 gem "coffee-rails"
 gem "audited-activerecord"
 gem "rails3_acts_as_paranoid"
@@ -36,7 +40,7 @@ gem "texticle"
 gem "aws-s3"
 gem "fog"
 gem "carrierwave"
-gem "rmagick", :require => 'RMagick'
+gem "rmagick"
 gem "json", '1.7.7'
 gem "geokit-rails3"
 
@@ -63,7 +67,6 @@ gem "bootstrap_form", "~> 0.3.2"
 gem "bower-rails", "~> 0.7.0"
 
 group :development, :test do
-  gem 'debugger'
   gem "heroku-api"
   gem 'sqlite3'
   gem "rack"
@@ -73,6 +76,10 @@ group :development, :test do
   gem "opentransact"
   gem 'annotate'
   gem 'therubyracer'
+end
+
+group :debug do
+  gem 'debugger'
 end
 
 group :development do

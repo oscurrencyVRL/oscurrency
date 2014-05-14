@@ -9,14 +9,16 @@ namespace :heroku do
 
     next unless amazon_credentials = auth_to_amazon(ui, APP_CONFIG)
 
-    if name_input = ui.ask("Enter the name of an existing Heroku app container (or leave blank to create a new one): ")
+    name_input = ui.ask("Enter the name of an existing Heroku app container (or leave blank to create a new one): ")
+    unless name_input.empty?
       heroku_app = heroku.get_app(name_input).body
     else
       print "Creating new heroku app... "
       heroku_app = heroku.post_app.body
     end
 
-    branch = ui.ask("Enter the name of the branch you wish to deploy (leave blank for master): ") || 'master'
+    branch = ui.ask("Enter the name of the branch you wish to deploy (leave blank for master): ")
+    branch = 'master' if branch.empty?
 
     app_name = heroku_app['name']
 
@@ -48,11 +50,11 @@ namespace :heroku do
     unless smtp_credentials['server'].blank?
       print "using provided credentials... "
       smtp_vars = {
-        'SMTP_SERVER' => smtp_credentials['smtp_server'],
-        'SMTP_DOMAIN'=> smtp_credentials['smtp_domain'],
-        'SMTP_PORT' => smtp_credentials['smtp_port'],
-        'SMTP_USER' => smtp_credentials['smtp_user'],
-        'SMTP_PASSWORD' => smtp_credentials['smtp_password']
+        'SMTP_SERVER' => smtp_credentials['server'],
+        'SMTP_DOMAIN'=> smtp_credentials['domain'],
+        'SMTP_PORT' => smtp_credentials['port'],
+        'SMTP_USER' => smtp_credentials['user'],
+        'SMTP_PASSWORD' => smtp_credentials['password']
       }
       heroku.put_config_vars(app_name, smtp_vars)
     else
