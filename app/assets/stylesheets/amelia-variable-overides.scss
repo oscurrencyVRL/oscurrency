@@ -1,11 +1,15 @@
-$bodyBackground:              #eeeeee;  
-$navbarBackground:            #555566;
-$navbarBackgroundHighlight:   #555566;
+@import url('//fonts.googleapis.com/css?family=Josefin+Slab:700');
+
+$bodyBackground:              #f1f9fb;  
+$navbarBackground:            #2278b4;
+$navbarBackgroundHighlight:   #2278b4;
 $textColor:                   rgba(0, 0, 0, 1);
 
-$tabBackgroundColor:          #999999;
-$tabBackgroundColorLite:      #ddcccc;
+$tabBackgroundColor:          #1b8770;
+$tabBackgroundColorLite:      #00b2cc;
 $tabTextColor:                #eeeeee;
 $tabBorderColor:              #999999;
 
 $btnPrimaryBackground:        #3cb9c6;
+
+$headingsFontFamily:    'Palatino Linotype', 'Book Antiqua', Palatino, serif;
