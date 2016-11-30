@@ -193,6 +193,7 @@ class Ability
     can [:read, :create,:update,:destroy], PersonMetadatum
 
     can :read, Exchange
+    can :edit, Exchange if person.admin?
     can :destroy, Exchange do |exchange|
       (exchange.class != ExchangeDeleted) && (exchange.customer == person || person.admin?)
     end
