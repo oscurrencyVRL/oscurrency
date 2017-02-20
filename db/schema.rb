@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20161020172513) do
+ActiveRecord::Schema.define(:version => 20170220150100) do
 
   create_table "account_imports", :force => true do |t|
     t.integer  "person_id",                     :null => false
@@ -529,6 +529,7 @@ ActiveRecord::Schema.define(:version => 20161020172513) do
     t.string   "display_name"
     t.boolean  "visible",                  :default => true
     t.boolean  "update_card",              :default => false
+    t.boolean  "junior_admin",             :default => false
   end
 
   add_index "people", ["admin"], :name => "index_people_on_admin"
@@ -561,6 +562,7 @@ ActiveRecord::Schema.define(:version => 20161020172513) do
     t.integer  "photoable_id"
     t.string   "photoable_type"
     t.string   "picture_for"
+    t.boolean  "highres",        :default => true
   end
 
   add_index "photos", ["parent_id"], :name => "index_photos_on_parent_id"
