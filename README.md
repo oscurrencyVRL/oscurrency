@@ -1,3 +1,6 @@
+
+>>>This project has moved and is now https://github.com/VTResilienceLab/oscurrency (2-1-18)
+
 [![Build Status](https://travis-ci.org/oscurrencyVRL/oscurrency.png?branch=master)](https://travis-ci.org/oscurrencyVRL/oscurrency)
 
 ### Quick Facts
